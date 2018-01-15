@@ -37,6 +37,16 @@ class ViewController: UIViewController {
             
             myLabel.text = "Hello Daddy!"
         }
+
+        if buttonCount >= 30 {
+            
+            view.backgroundColor = UIColor.green
+            
+            myLabel.text = "Hello Joseph!"
+        }
+
+    
+    
     }
     
     
