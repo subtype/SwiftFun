@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nti-9Q-A9Z">
-                                <rect key="frame" x="163" y="374" width="48" height="30"/>
-                                <state key="normal" title="Enter..."/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDD-ew-LQo"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The total is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-a8-mhC">
+                                <rect key="frame" x="138" y="440" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvA-YW-IjJ">
                                 <rect key="frame" x="137" y="263" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Q9n-vZ-0xO"/>
+                                    <constraint firstAttribute="width" constant="100" id="pDS-3c-53v"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -37,32 +36,39 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-cF-t19">
                                 <rect key="frame" x="137" y="318" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="WGp-Ur-Ogi"/>
+                                    <constraint firstAttribute="width" constant="100" id="2R6-ub-fVd"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add numbers together" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Up3-a8-mhC">
-                                <rect key="frame" x="101" y="163" width="173" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addition Machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0c-wS-UeS">
+                                <rect key="frame" x="121" y="68" width="133" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nti-9Q-A9Z">
+                                <rect key="frame" x="163.5" y="374" width="48" height="30"/>
+                                <state key="normal" title="Enter..."/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDD-ew-LQo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="d1C-cF-t19" firstAttribute="top" secondItem="xvA-YW-IjJ" secondAttribute="bottom" constant="25" id="0kU-ke-JCW"/>
+                            <constraint firstItem="Up3-a8-mhC" firstAttribute="top" secondItem="i0c-wS-UeS" secondAttribute="bottom" constant="351" id="0ek-JK-Yv6"/>
+                            <constraint firstItem="nti-9Q-A9Z" firstAttribute="top" secondItem="d1C-cF-t19" secondAttribute="bottom" constant="26" id="6dK-se-T12"/>
                             <constraint firstItem="nti-9Q-A9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="55.5" id="6ex-O9-ZV0"/>
                             <constraint firstItem="nti-9Q-A9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8IV-ko-s1q"/>
                             <constraint firstItem="nti-9Q-A9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A8j-7u-7vJ"/>
-                            <constraint firstItem="d1C-cF-t19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EeE-KQ-G4Y"/>
-                            <constraint firstItem="Up3-a8-mhC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-160" id="KU1-Dv-Of5"/>
+                            <constraint firstItem="xvA-YW-IjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bz9-3w-AgY"/>
                             <constraint firstItem="Up3-a8-mhC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M3E-Ub-Ykb"/>
-                            <constraint firstItem="xvA-YW-IjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHB-pZ-NmW"/>
-                            <constraint firstItem="d1C-cF-t19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZR-t9-e46"/>
-                            <constraint firstItem="xvA-YW-IjJ" firstAttribute="top" secondItem="Up3-a8-mhC" secondAttribute="bottom" constant="79" id="f33-NE-WII"/>
-                            <constraint firstItem="xvA-YW-IjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZD-rD-Dvd"/>
+                            <constraint firstItem="i0c-wS-UeS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X5Q-eb-iiA"/>
+                            <constraint firstItem="d1C-cF-t19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="enW-tc-pJS"/>
+                            <constraint firstItem="i0c-wS-UeS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-255" id="kbN-2n-9zc"/>
+                            <constraint firstItem="d1C-cF-t19" firstAttribute="top" secondItem="xvA-YW-IjJ" secondAttribute="bottom" constant="25" id="m2D-Ms-SLU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
