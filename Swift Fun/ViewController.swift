@@ -4,7 +4,8 @@
 //
 //  Created by David Lloyd on 15/01/2018.
 //  Copyright © 2018 David Lloyd. All rights reserved.
-//  Testing Git
+//  Following a tutorial
+//
 
 import UIKit
 
