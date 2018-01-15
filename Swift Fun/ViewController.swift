@@ -11,40 +11,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var topTextField: UITextField!
     @IBOutlet weak var bottomTextField: UITextField!
-
     
     @IBAction func buttonTapped(_ sender: Any) {
      
-        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        let addition = true
         
-        
-//        var total = String(sum)
-        
-        
-//          myLabel.text = "The total is  \(sum)"
-          myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
-        
-        
-        
-//        myLabel.text = String(sum)
+        if addition {
+            let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            
+            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+            
+        } else {
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            
+            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+
+        }
         
         print(topTextField.text!)
         print(bottomTextField.text!)
         
-        
-    
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         
     }
 
@@ -52,7 +46,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
